@@ -1,75 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Meeting minutes for our project brainstorm">
+  <title>Pomodoro Timer First Brainstorm</title>
+  <link rel="icon" type="image/png" href="screenshots/tracking.png">
+</head>
 
-  <head>
-    <meta charset="UTF-8">
-    <title>Pomodoro Timer First Brainstorm</title>
-  </head>
+<body>
+  <header>
+    <h1>Pomodoro Timer First Brainstorm</h1>
+    <h2>Brainstorming</h2>
+    <h3>April 8, 2026</h3>
 
-  <body>
-    <header>
-      <h1>Pomodoro Timer First Brainstorm</h1>
-      <h2>Brainstorming</h2>
-      <h3>April 8, 2026</h3>
-    </header>
-    
-    <main>
-  <section></section>
-    <h2>Attendance</h2>
-    <ul>
-      <li>Ben</li>
-      <li>Tom</li>
-      <li>Maria</li>
-      <li>Kevin</li>
-    </ul>
-  </section>
+    <nav>
+      <ul>
+        <li><a href="#attendance">Attendance</a></li>
+        <li><a href="#agenda">Agenda</a></li>
+        <li><a href="#unfinished">Unfinished Business</a></li>
+        <li><a href="#new">New Business</a></li>
+        <li><a href="#comments">Comments</a></li>
+        <li><a href="#media">Media</a></li>
+        <li><a href="#extras">Extra Notes</a></li>
+        <li><a href="#form">Feedback Form</a></li>
+      </ul>
+    </nav>
 
-   <section>
-    <h2>Agenda</h2>
-    <ol>
-      <li>Go over project ideas</li>
-      <li>Choose a direction for the project</li>
-      <li>Talk about possible features</li>
-      <li>Decide what to work on before next meeting</li>
-    </ol>
-  </section>
+    <hr>
+  </header>
 
-   <section>
-    <h2>Unfinished Business</h2>
-    <p>We still needed to decide on a final project idea and make sure everyone had access to the GitHub repository.</p>
-  </section>
+  <main>
+    <section id="attendance">
+      <h2>Attendance</h2>
+      <ul>
+        <li>Ben</li>
+        <li>Tom</li>
+        <li>Maria</li>
+        <li>Kevin</li>
+      </ul>
+    </section>
 
-    <section>
-    <h2>New Business</h2>
-    <p>We talked about creating a Pomodoro timer app and discussed features like custom session lengths, a simple layout, and alerts when time is up.</p>
-  </section>
+    <section id="agenda">
+      <h2>Agenda</h2>
+      <ol>
+        <li>Go over project ideas</li>
+        <li>Choose a direction for the project</li>
+        <li>Talk about possible features</li>
+        <li>Decide what to work on before next meeting</li>
+      </ol>
+    </section>
 
-    <section>
-    <h2>Miscellaneous Comments/Questions/Concerns</h2>
-    <p>One concern was whether we should keep the first version very simple or try to add extra features right away. We also wondered if the app should save progress.</p>
-  </section>
+    <section id="unfinished">
+      <h2>Unfinished Business</h2>
+      <p>We still needed to decide on a final project idea and make sure everyone had access to the GitHub repository.</p>
+    </section>
 
-  <section>
-  <h2>Diagrams / Things Presented</h2>
-  <img src="Pomodoro screenshot.png" alt="Whiteboard sketch of the app layout">
-</section>
+    <section id="new">
+      <h2>New Business</h2>
+      <div>
+        <p>We talked about creating a <span>Pomodoro timer app</span> and discussed several possible features.</p>
+        <p><b>Basic timer controls</b> were the first thing we wanted to build.</p>
+        <p><strong>Keeping the first version simple</strong> was important to the group.</p>
+        <p><i>Sound alerts</i> and <em>custom session lengths</em> were also suggested.<br>We may add those after the core timer works.</p>
+      </div>
+    </section>
 
-<section>
-  <h2>Meeting Recordings</h2>
+    <section id="comments">
+      <h2>Miscellaneous Comments / Questions / Concerns</h2>
+      <p>One concern was whether we should keep the first version very simple or try to add extra features right away. We also wondered if the app should save progress.</p>
+    </section>
 
-  <h3>Audio Recording</h3>
-  <audio controls>
-    <source src="screenshots/meeting-audio.mp3" type="audio/mpeg">
-    Your browser does not support the audio element.
-  </audio>
+    <section id="media">
+      <h2>Diagrams / Things Presented</h2>
+      <img src="screenshots/Pomodoro screenshot.png " alt="Whiteboard sketch of the app layout" width="500">
 
-  <h3>Video Recording</h3>
-  <video controls width="650", height="400" >
-    <source src="screenshots/meeting-video.mp4" type="video/mp4">
-    Your browser does not support the video element.
-  </video>
-</section>
+      <h3>Meeting Recordings</h3>
 
-</main>
-  </body>
+      <p>Audio Recording</p>
+      <audio controls>
+        <source src="screenshots/meeting-audio.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+
+      <p>Video Recording</p>
+      <video controls width="650" height="400">
+        <source src="screenshots/meeting-video.mp4" type="video/mp4">
+        Your browser does not support the video element.
+      </video>
+    </section>
+    <hr>
+
+    <section id="extras">
+      <h2>Extra Notes</h2>
+      <details>
+        <summary>Click to view extra meeting notes</summary>
+        <p>We looked at the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">HTML documentation</a> for help with page structure and semantic tags.</p>
+      </details>
+    </section>
+
+    <section id="form">
+      <h2>Feedback Form</h2>
+      <form>
+        <fieldset>
+          <legend>Meeting Feedback</legend>
+
+          <p>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+          </p>
+
+          <p>
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date">
+          </p>
+
+          <p>Did you attend the meeting?</p>
+          <input type="radio" id="yes" name="attended" value="yes">
+          <label for="yes">Yes</label>
+
+          <input type="radio" id="no" name="attended" value="no">
+          <label for="no">No</label>
+
+          <p>What did you find useful?</p>
+          <input type="checkbox" id="ideas" name="ideas">
+          <label for="ideas">Project ideas</label>
+
+          <input type="checkbox" id="features" name="features">
+          <label for="features">Feature discussion</label>
+
+          <p>
+            <label for="role">Choose a role:</label>
+            <input list="roles" id="role" name="role">
+            <datalist id="roles">
+              <option value="Designer"></option>
+              <option value="Developer"></option>
+              <option value="Tester"></option>
+              <option value="Writer"></option>
+            </datalist>
+          </p>
+
+          <p>
+            <label for="favorite">Favorite topic:</label>
+            <select id="favorite" name="favorite">
+              <option value="brainstorming">Brainstorming</option>
+              <option value="features">Features</option>
+              <option value="planning">Planning</option>
+            </select>
+          </p>
+
+          <p>
+            <label for="comments-box">Extra comments:</label><br>
+            <textarea id="comments-box" name="comments-box" rows="4" cols="40"></textarea>
+          </p>
+
+          <button type="submit">Submit</button>
+        </fieldset>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <hr>
+    <p>CSE 110 Lab 2</p>
+  </footer>
+</body>
 </html>
